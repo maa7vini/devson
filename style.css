@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    background-color: #43cea2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    color: #FFF;
+}
+
+.nav-links a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-links a:hover {
+    color: #2214db;
+    transition: .5s;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #43cea2, #185a9d);
+}
+
+.header-left {
+    height: 86vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-txt {
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.header-txt h1 {
+    font-size: 4em;
+    color: #FFF;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
+}
+
+.header-txt p {
+    font-size: 1.3em;
+    color: #FFF;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2214db;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3125da;
+    transition: 1s;
+}
+
+.header-right {
+    height: 86vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right img {
+    height: 450px;
+    width: 450px;
+}
+
+@media (max-width: 1155px) {
+    .header-txt h1 {
+        font-size: 3.5em;
+    }
+    
+    .header-txt p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1010px) {
+    .header-txt h1 {
+        font-size: 3em;
+    }
+    
+    .header-txt p {
+        font-size: .7em;
+    }
+
+    .header-right img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 865px) {
+    .header-right img {
+        height: 350px;
+        width: 350px;
+    }
+}
